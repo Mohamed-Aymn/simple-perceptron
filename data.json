@@ -1,0 +1,12 @@
+{
+  "max": 50,
+  "features": 2,
+  "points": [
+    {"label": "a", "position": [-2, -1]},
+    {"label": "a", "position": [1, 1]},
+    {"label": "b", "position": [-2, -2]},
+    {"label": "b", "position": [-1, -2]},
+    {"label": "a", "position": [1, -1]},
+    {"label": "b", "position": [2, -2]}
+  ]
+}
