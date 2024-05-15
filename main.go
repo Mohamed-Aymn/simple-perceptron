@@ -5,6 +5,8 @@ import (
     "fmt"
     "os"
     "math"
+    "math/rand"
+    "time"
 )
 
 type Data struct {
@@ -45,7 +47,13 @@ func main() {
     ** Random Inital Values
     **
     **/
-    w := [3]float64{0, 1, 0.5}
+    rand.Seed(time.Now().UnixNano()) // Seed the random number generator
+    var w [3]float64
+    for i := 0; i < len(w); i++ {
+        randomFloat := rand.Float64() * 5.0 // Generate random float between 0.0 and 5.0
+        roundedFloat := float64(int(randomFloat*10)) / 10.0 // Round to one decimal point
+        w[i] = roundedFloat
+    }
     n := 0.2
 
     /**
